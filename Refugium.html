@@ -134,13 +134,20 @@
 					</div>
 				</div>
 				<script>
-					/* Data about Afghan refugees */
+					/* This variable is a number, which is the total number of Afghans discplaced between 1979-2013*/
 					var total_displaced_1979_2013 = 117748113; 
+					/* This variable is a string, namely the name of the country my page is focused on*/
 					var country_name = "Afghanistan";
+					/* This is a boolean variable, telling us whether UNHCR considers repatriation a safe strategy for this refugee population yet */
 					var safe_repatration_possible = false;
-					var main_host_countries = ["Pakistan", "Iran"];
+					/* This variable is an array of the main host countries for Afghan refugees */
+					var main_host_countries = ["Pakistan", "Iran", "Germany", "Austria", "Sweden"];
+					/* This variable is an object, which -in form of a boolean- informs us whether the host countries are signatories of the Geneva convention & whether UNHCR operates within their borders */
 					var Pakistan = {"Geneva Convention Signatory":true, "Allows UNHCR":true};
 					var Iran = {"Geneva Convention Signatory":false, "Allows UNHCR":false"};
+					var Germany = {"Geneva Convention Signatory":true, "UNHCR-Operated Centers":false"};
+					var Austria = {"Geneva Convention Signatory":true, "UNHCR-Operated Centers":false"};
+					var Sweden = {"Geneva Convention Signatory":true, "UNHCR-Operated Centers":false"};
 				</script>
 	</body>
 </html>

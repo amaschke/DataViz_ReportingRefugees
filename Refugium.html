@@ -124,11 +124,16 @@
 		/* This variable is an array of the main host countries for Afghan refugees */
 		var main_host_countries = ["Pakistan", "Iran", "Germany", "Austria", "Sweden"];
 		/* This variable is an object, which -in form of a boolean- informs us whether the host countries are signatories of the Geneva convention & whether UNHCR operates within their borders */
-		var Pakistan = {"Geneva Convention Signatory":true, "Allows UNHCR":true};
-		var Iran = {"Geneva Convention Signatory":false, "Allows UNHCR":false"};
-		var Germany = {"Geneva Convention Signatory":true, "UNHCR-Operated Centers":false"};
-		var Austria = {"Geneva Convention Signatory":true, "UNHCR-Operated Centers":false"};
-		var Sweden = {"Geneva Convention Signatory":true, "UNHCR-Operated Centers":false"};
+		var Pakistan = {"Geneva_Convention_Signatory":true, "UNHCR_Operated_Centers":true}
+		var Iran = {"Geneva_Convention_Signatory":false, "UNHCR_Operated_Centers":false}
+		var Germany = {"Geneva_Convention_Signatory":true, "UNHCR_Operated_Centers":false}
+		var Austria = {"Geneva_Convention_Signatory":true, "UNHCR_Operated_Centers":false}
+		var Sweden = {"Geneva_Convention_Signatory":true, "UNHCR_Operated_Centers":false}
+		
+		console.log("This is the country which hosts most Afghan refugees:");
+		console.log(main_host_countries[0]);
+		console.log("This country allows UNHCR to operate shelters there.");
+		console.log(Pakistan.UNHCR_Operated_Centers);
 		</script>
 	</body>
 </html>

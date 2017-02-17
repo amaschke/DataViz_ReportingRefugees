@@ -167,9 +167,13 @@
 			console.log(main_host_countries[0]);
 			console.log("These are the continents most Afghans flee to:");
 			console.log(host_countries.Continents);
-
+			
+			/* To keep streamlining the website I initially created, I transferred the information of all articles posted above into the objects below*/
+			
 			var afghan_refugee_news = [{
 
+/* All objects below follow the same structure, to make them easy to loop through*/
+				
 				"storytitle" : "Afghan translator now in Denver vetted for 2 years before special visa was approved",
 
 				"storypub" : "thedenverchannel",
@@ -182,7 +186,9 @@
 
 				"summarytext" : "Afghan Refugee Tamim Ziyae came to the U.S. on a special immigrant visa or SIV, because he worked as a translator for the U.S. Army and Marine Corps in his native Afghanistan. Ziyae is now living in Denver, CO, but his way into the United States was not easy, despite his service to the country's troops ."
 
-			}, {
+/* I also added a 'country' property, designating the country which the article is set in, not published*/
+			
+			}, { 
 
 				"storytitle" : "Serbia introduces lockdown for migrants in Belgrade center",
 
@@ -196,6 +202,7 @@
 
 				"summarytext" : "Serbian Authorities have placed 550 refugees, most of them from Pakistan and Afghanistan on lockdown in former army barracks turned into a refugee camp in Belgrade. The lockdown followed an alleged attack on a female pedestrian, however, refugees have previously decried discriminatory and violent treatment in the Balkan region."
 
+/* This is story #3, from the stories above*/
 			}, {
 
 				"storytitle" : "Only a third of Americans think Trump’s travel ban will make them more safe",
@@ -209,7 +216,7 @@
 				"storyimage" : "http://www.todayonline.com/sites/default/files/styles/photo_gallery_image/public/photos/43_images/28680275.JPG?itok=JcY0qBwig",
 
 				"summarytext" : "President Trump presented his temporary travel ban as a safety measure. But only a third of American feel like the executive action is actually going to make them safer."
-
+/* And this is story #3.*/
 			}, {
 
 				"storytitle" : "The refugees hunted and attacked by regimes for rapping",
@@ -226,19 +233,18 @@
 
 			}];
 			
-			/* Goal: Sort through list of articles and console log only the ones that came from the NYT */
-			/*To go through the list, create a for loop*/
+			/* Here, I'm using a for loop to go through the list and find out which stories are about refugees in Germany */
 			
 			for(var counter = 0; counter < afghan_refugee_news.length; counter++){
-			/*everything I want to do to the list, has to be between the brackets)*/
-			
+			/*Above, is everything I want to actually happen to the list*/
+			/*Here, I'm creating a variable for the result*/
 			var currentArticle = afghan_refugee_news[counter];
-			
+			/*If the loop comes up with an article set in Germany, I want the console to log it*/
 			if (currentArticle.country == "germany"){
 				console.log(afghan_refugee_news[counter]);
 			}else{
 			console.log("Not about refugees in Germany");}	
-			
+			/*And: I want it to log the amount of articles that are not about refugees in Germany, titleswith the string above*/
 			}
 			
 			

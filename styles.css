@@ -1,0 +1,79 @@
+.websitetitle {
+	font-family: "times new roman", Times, serif;
+	font-size: 60px;
+	color: #000000;
+	padding-left: 100px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 0px;
+}
+/*This is the CSS class I created for the subtitle of my webpage.*/
+.websitesubtitle {
+	font-family: "trebuchet", Trebuchet, sans-serif;
+	font-size: 30px;
+	color: #808080;
+	padding-left: 100px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+/*This is the CSS class I created to style all the storytitles on my webpage.*/
+.storytitle {
+	font-family: "trebuchet", Trebuchet, sans-serif;
+	font-size: 24px;
+	font-weight: 800;
+	color: #000000;
+	padding-left: 100px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	word-wrap: break-word;
+	width: 640px;
+}
+/*This is the CSS class I created to style all images on my webpage in a uniform fashion.*/
+.articleimg {
+	width: 600px;
+	border: solid 20px;
+	color: #E6E6FA;
+	margin-left: 100px;
+	margin-right: 20px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+/*This is the CSS class I created to style my summaries.*/
+.summarytext {
+	font-family: "trebuchet", Trebuchet, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+	padding-left: 100px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	word-wrap: break-word;
+	width: 640px;
+}
+/*I thought the way the 'decoration' changes once you've clicked the link was helpful, but not necessarily
+ nice to look at in the story title. That's why I created full story links, and this is their style class.*/
+.fullstorylink {
+	font-family: "trebuchet", Trebuchet, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+	padding-left: 100px;
+	padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 20px;
+}
+/*This division specifies the size of the data visualization, to safe space for it before the viz actually loads*/
+.DataVizChart {
+	width: 800px;
+	height: 600px;
+}
+img {
+	width: 100%;
+}

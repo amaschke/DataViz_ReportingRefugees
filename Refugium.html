@@ -10,14 +10,16 @@
 		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 		<script type="text/javascript">
 			// Load the Visualization API and the corechart package.
-			google.charts.load('current', {'packages' : ['corechart']});
+			google.charts.load('current', {
+				'packages' : ['corechart']
+			});
 
 			// This says: Once you get a 'call back' from Google, giving you the corechart package, please execute
 			// the drawChart function below.
-			google.charts.setOnLoadCallback(drawChart);
+			google.charts.setOnLoadCallback(createViz);
 
 			// The function begins with creating the table the chart will be based on.
-			function drawChart() {
+			function createViz() {
 
 				// This line of code is calling up the DataTable function to let me create a new table.
 				var chart_data = new google.visualization.DataTable();
@@ -54,8 +56,7 @@
 			Afghan Refugees Across the Globe
 		</div>
 		<!-- This is the div I created for my chart, which is characterized by its ID-->
-		<div id="DataVizChart" class="DataVizChart">
-		</div>
+		<div id="DataVizChart" class="DataVizChart"></div>
 		<!-- This is the title of my webpage's first story -->
 		<div class="storytitle">
 			Afghan translator now in Denver vetted for 2 years before special visa was approved

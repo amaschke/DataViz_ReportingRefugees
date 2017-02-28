@@ -33,7 +33,7 @@
 
 				// This variable sets the parameters for how my chart is going to look on the page:
 				// What's its title? What are it's dimension? This is where I define that.
-				var options = {
+				var design = {
 					'chart_title' : 'Afghan Refugees by Host Country',
 					'width' : 800,
 					'height' : 600
@@ -41,8 +41,8 @@
 
 				// This line of code will initiate the actual drawing of the chart which includes the kind of chart
 				// I will be drawing, in this case: a pie chart.
-				var chart = new google.visualization.PieChart(document.getElementById('DataVizChart'));
-				chart.draw(chart_data, options);
+				var viz = new google.visualization.PieChart(document.getElementById('DataVizChart'));
+				viz.draw(chart_data, design);
 			}
 		</script>
 	</head>

@@ -31,7 +31,7 @@
 				var chart_data = new google.visualization.DataTable();
 				// These lines of code specify the columns of the rows(each line equals one column),
 				// including the data type to be expected in that column and the column name.
-				chart_data.addColumn('string', 'Topping');
+				chart_data.addColumn('string', 'Country');
 				chart_data.addColumn('number', 'Number of Refugees');
 				// These lines of are used to add rows, and fill in their values in the order and data type specified
 				// by the previous addColumn lines
@@ -41,8 +41,8 @@
 				// What's its title? What are it's dimension? This is where I define that.
 				var design = {
 					'chart_title' : 'Afghan Refugees by Host Country',
-					'width' : 600,
-					'height' : 300
+					'width' : 500,
+					'height' : 250
 				};
 
 				// This line of code will initiate the actual drawing of the chart which includes the kind of chart
@@ -58,23 +58,23 @@
 				var chart_data = new google.visualization.DataTable();
 				// These lines of code specify the columns of the rows(each line equals one column),
 				// including the data type to be expected in that column and the column name.
-				chart_data.addColumn('string', 'Topping');
+				chart_data.addColumn('string', 'Year');
 				chart_data.addColumn('number', 'Number of Refugees');
 				// These lines of are used to add rows, and fill in their values in the order and data type specified
 				// by the previous addColumn lines
-				chart_data.addRows([['Pakistan', 1615876], ['Iran', 814015], ['Germany', 24203], ['Austria', 11906], ['Sweden', 10499]]);
+				chart_data.addRows([['2007', 1909911],['2008', 1817913],['2009', 1905804], ['2010', 3054709], ['2011', 2664440], ['2012', 2586034], ['2013', 2556507]]);
 
 				// This variable sets the parameters for how my chart is going to look on the page:
 				// What's its title? What are it's dimension? This is where I define that.
 				var design = {
 					'chart_title' : 'Afghan Refugees by Host Country',
-					'width' : 600,
-					'height' : 300
+					'width' : 500,
+					'height' : 250
 				};
 
 				// This line of code will initiate the actual drawing of the chart which includes the kind of chart
 				// I will be drawing, in this case: a pie chart.
-				var viz = new google.visualization.PieChart(document.getElementById('Visual2'));
+				var viz = new google.visualization.LineChart(document.getElementById('Visual2'));
 				viz.draw(chart_data, design);
 			}
 		</script>

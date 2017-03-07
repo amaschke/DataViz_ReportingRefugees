@@ -71,8 +71,8 @@
 }
 /*This division specifies the size of the data visualization, to safe space for it before the viz actually loads*/
 .DataVizChart {
-	width: 800px;
-	height: 600px;
+	width: 550px;
+	height: 300px;
 }
 img {
 	width: 100%;
